@@ -10,5 +10,8 @@
   "bugs": {
     "url": "https://github.com/litichevskiydv/grpc-bay/issues"
   },
-  "homepage": "https://github.com/litichevskiydv/grpc-bay#readme"
+  "homepage": "https://github.com/litichevskiydv/grpc-bay#readme",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
