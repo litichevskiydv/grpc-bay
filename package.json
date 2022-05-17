@@ -1,0 +1,14 @@
+{
+  "name": "grpc-bay",
+  "description": "Packages for working with gRPC in the JS world",
+  "author": "Dmitriy Litichevskiy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litichevskiydv/grpc-bay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litichevskiydv/grpc-bay/issues"
+  },
+  "homepage": "https://github.com/litichevskiydv/grpc-bay#readme"
+}
