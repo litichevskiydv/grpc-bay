@@ -1,0 +1,58 @@
+{
+	"name": "grpc-clients-tracking",
+	"version": "2.0.0",
+	"description": "Interceptors for the client and server to collect statistics about consumer calls through Prometheus",
+	"engines": {
+		"node": ">=10.10.0"
+	},
+	"main": "./src/index.js",
+	"types": "./src/index.d.ts",
+	"files": [
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/litichevskiydv/grpc-clients-tracking.git"
+	},
+	"keywords": [
+		"gRPC",
+		"Tracking"
+	],
+	"author": "Dmitriy Litichevskiy",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/litichevskiydv/grpc-clients-tracking/issues"
+	},
+	"homepage": "https://github.com/litichevskiydv/grpc-clients-tracking#readme",
+	"dependencies": {
+		"parent-module": "^2.0.0",
+		"read-pkg-up": "^7.0.1"
+	},
+	"peerDependencies": {
+		"@grpc/grpc-js": "^1.2.0",
+		"prom-client": "^11.5.3"
+	},
+	"devDependencies": {
+		"@grpc/grpc-js": "^1.2.12",
+		"@types/jest": "^26.0.22",
+		"google-protobuf": "^3.15.6",
+		"jest": "^26.6.3",
+		"jest-extended": "^0.11.5",
+		"make-dir-cli": "^2.0.0",
+		"processing-context": "^1.0.0",
+		"prom-client": "^13.1.0",
+		"protobufjs": "^6.10.2"
+	},
+	"jest": {
+		"testEnvironment": "node",
+		"setupFilesAfterEnv": [
+			"jest-extended"
+		],
+		"coveragePathIgnorePatterns": [
+			"/node_modules/",
+			"/tests/generated/"
+		]
+	}
+}
