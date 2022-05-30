@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/litichevskiydv/grpc-error-extra#readme",
   "dependencies": {
-    "serialize-error": "^8.0.1"
+    "serialize-error": "^8.1.0"
   },
   "peerDependencies": {
     "@grpc/grpc-js": "^1.2.0"
