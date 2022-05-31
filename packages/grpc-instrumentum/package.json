@@ -34,16 +34,16 @@
   },
   "homepage": "https://github.com/litichevskiydv/grpc-instrumentum#readme",
   "dependencies": {
-    "bl": "^4.1.0",
-    "camelcase": "^6.2.0",
-    "del": "^6.0.0",
+    "bl": "^5.0.0",
+    "camelcase": "^6.3.0",
+    "del": "^6.1.1",
     "dot-prop": "^6.0.1",
-    "grpc-tools": "^1.11.1",
+    "grpc-tools": "^1.11.2",
     "load-json-file": "^6.2.0",
     "make-dir": "^3.1.0",
     "path-key": "^3.1.1",
     "slash": "^3.0.0",
-    "ts-protoc-gen": "^0.14.0",
+    "ts-protoc-gen": "^0.15.0",
     "yargs": "^16.2.0"
   }
 }
