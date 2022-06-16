@@ -1,5 +1,6 @@
 {
   "name": "grpc-bay",
+  "version": "1.0.0",
   "description": "Packages for working with gRPC in the JS world",
   "author": "Dmitriy Litichevskiy",
   "license": "MIT",
@@ -11,7 +12,24 @@
     "url": "https://github.com/litichevskiydv/grpc-bay/issues"
   },
   "homepage": "https://github.com/litichevskiydv/grpc-bay#readme",
+  "scripts": {
+    "test": "jest --verbose"
+  },
   "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "jest-extended": "^2.0.0",
     "lerna": "^4.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "jest-extended/all"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/tests/generated/",
+      "/tests/localTracer/"
+    ]
   }
 }

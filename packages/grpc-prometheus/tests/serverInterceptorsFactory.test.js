@@ -10,19 +10,19 @@ const serverInterceptor = serverInterceptorsFactory();
 const {
   HelloRequest: ServerHelloRequest,
   HelloResponse: ServerHelloResponse,
-  ErrorRequest: ServerErrorRequest,
+  ErrorRequest: ServerErrorRequest
 } = require("./generated/server/greeter_pb").v1;
 const {
   Event,
   HelloRequest: ClientHelloRequest,
   ErrorRequest: ClientErrorRequest,
-  GreeterClient,
+  GreeterClient
 } = require("./generated/client/greeter_client_pb").v1;
 
-const grpcBind = "0.0.0.0:3000";
+const grpcBind = "0.0.0.0:5000";
 const packageObject = grpc.loadPackageDefinition(
   loadSync(path.join(__dirname, "./protos/greeter.proto"), {
-    includeDirs: [path.join(__dirname, "./include/")],
+    includeDirs: [path.join(__dirname, "./include/")]
   })
 );
 
@@ -50,7 +50,7 @@ const createServer = () =>
       },
       throwError: () => {
         throw new Error("Something went wrong");
-      },
+      }
     })
     .bind(grpcBind)
     .buildAsync();
@@ -88,7 +88,7 @@ const throwError = async (callOptions) => {
 const prepareErrorMatchingObject = (innerErrorMessage) =>
   expect.objectContaining({
     message: "13 INTERNAL: Unhandled exception has occurred",
-    details: [expect.objectContaining({ detail: innerErrorMessage })],
+    details: [expect.objectContaining({ detail: innerErrorMessage })]
   });
 
 /**
@@ -104,7 +104,7 @@ const verifyMetricsValues = async (labels) => {
   expect(grpcServerHandlingSeconds.values).toEqual(
     expect.arrayContaining([
       { metricName: "grpc_server_handling_seconds_bucket", labels: { ...labels, le: "+Inf" }, value: 1 },
-      { metricName: "grpc_server_handling_seconds_count", labels, value: 1 },
+      { metricName: "grpc_server_handling_seconds_count", labels, value: 1 }
     ])
   );
 };
@@ -131,7 +131,7 @@ test("Must register successful call on the server side", async () => {
     grpc_code: "OK",
     grpc_method: "SayHello",
     grpc_service: "v1.Greeter",
-    grpc_type: "unary",
+    grpc_type: "unary"
   };
 
   // When
@@ -150,7 +150,7 @@ test("Must register errored call on the server side", async () => {
     grpc_code: "Internal",
     grpc_method: "ThrowError",
     grpc_service: "v1.Greeter",
-    grpc_type: "unary",
+    grpc_type: "unary"
   };
 
   // When

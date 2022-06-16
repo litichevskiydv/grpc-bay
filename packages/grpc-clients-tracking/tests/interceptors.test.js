@@ -10,19 +10,19 @@ const clientInterceptor = clientInterceptorsFactory({ clientVersion: "1.1.1" });
 const {
   HelloRequest: ServerHelloRequest,
   HelloResponse: ServerHelloResponse,
-  ErrorRequest: ServerErrorRequest,
+  ErrorRequest: ServerErrorRequest
 } = require("./generated/server/greeter_pb").v1;
 const {
   Event,
   HelloRequest: ClientHelloRequest,
   ErrorRequest: ClientErrorRequest,
-  GreeterClient,
+  GreeterClient
 } = require("./generated/client/greeter_client_pb").v1;
 
-const grpcBind = "0.0.0.0:3000";
+const grpcBind = "0.0.0.0:6000";
 const packageObject = grpc.loadPackageDefinition(
   loadSync(path.join(__dirname, "./protos/greeter.proto"), {
-    includeDirs: [path.join(__dirname, "./include/")],
+    includeDirs: [path.join(__dirname, "./include/")]
   })
 );
 
@@ -50,7 +50,7 @@ const createServer = () =>
       },
       throwError: () => {
         throw new Error("Something went wrong");
-      },
+      }
     })
     .bind(grpcBind)
     .buildAsync();
@@ -89,7 +89,7 @@ const throwError = async (callOptions) => {
 const prepareErrorMatchingObject = (innerErrorMessage) =>
   expect.objectContaining({
     message: "13 INTERNAL: Unhandled exception has occurred",
-    details: [expect.objectContaining({ detail: innerErrorMessage })],
+    details: [expect.objectContaining({ detail: innerErrorMessage })]
   });
 
 /**
@@ -121,12 +121,12 @@ test("Must register successful call", async () => {
   client = createClient();
 
   const labels = {
-    consumer_name: "grpc-clients-tracking",
+    consumer_name: "grpc-bay",
     consumer_version: process.env.npm_package_version,
     client_version: "1.1.1",
     grpc_method: "SayHello",
     grpc_service: "v1.Greeter",
-    grpc_type: "unary",
+    grpc_type: "unary"
   };
 
   // When
@@ -142,12 +142,12 @@ test("Must register errored call", async () => {
   client = createClient();
 
   const labels = {
-    consumer_name: "grpc-clients-tracking",
+    consumer_name: "grpc-bay",
     consumer_version: process.env.npm_package_version,
     client_version: "1.1.1",
     grpc_method: "ThrowError",
     grpc_service: "v1.Greeter",
-    grpc_type: "unary",
+    grpc_type: "unary"
   };
 
   // When

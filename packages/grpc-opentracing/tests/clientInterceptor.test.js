@@ -9,14 +9,14 @@ const { clientInterceptor, serverInterceptor } = require("../src/index");
 const {
   HelloRequest: ServerHelloRequest,
   HelloResponse: ServerHelloResponse,
-  ErrorRequest: ServerErrorRequest,
+  ErrorRequest: ServerErrorRequest
 } = require("./generated/server/greeter_pb").v1;
 const {
   HelloRequest: ClientHelloRequest,
   ErrorRequest: ClientErrorRequest,
   TransactionRequest: ClientTransactionRequest,
   Event,
-  GreeterClient,
+  GreeterClient
 } = require("./generated/client/greeter_client_pb").v1;
 const { GreeterClient: GreeterRawLevelClient } = require("./generated/client/greeter_grpc_pb");
 
@@ -25,7 +25,7 @@ const LocalSpan = require("./localTracer/span");
 
 const packageObject = grpc.loadPackageDefinition(
   loadSync(path.join(__dirname, "./protos/greeter.proto"), {
-    includeDirs: [path.join(__dirname, "./include/")],
+    includeDirs: [path.join(__dirname, "./include/")]
   })
 );
 /** @type {import("@grpc/grpc-js").Server} */
@@ -65,7 +65,7 @@ const createServer = (grpcBind, configurator) => {
         });
 
         return {};
-      },
+      }
     })
     .bind(grpcBind)
     .buildAsync();
@@ -108,7 +108,7 @@ const throwError = async (callOptions) => {
  */
 const startAndCancelTransaction = async (grpcBind) => {
   const rawLevelClient = new GreeterRawLevelClient(grpcBind, grpc.credentials.createInsecure(), {
-    interceptors: [clientInterceptor],
+    interceptors: [clientInterceptor]
   });
 
   try {
@@ -140,7 +140,7 @@ afterEach(() => {
 
 test("Must trace single successful call on the client side", async () => {
   // Given
-  const grpcBind = "0.0.0.0:3002";
+  const grpcBind = "0.0.0.0:4002";
   server = await createServer(grpcBind);
   client = createClient(grpcBind);
 
@@ -157,7 +157,7 @@ test("Must trace single successful call on the client side", async () => {
 
 test("Must trace single errored call on the client side", async () => {
   // Given
-  const grpcBind = "0.0.0.0:3003";
+  const grpcBind = "0.0.0.0:4003";
   server = await createServer(grpcBind);
   client = createClient(grpcBind);
 
@@ -178,7 +178,7 @@ test("Must trace single errored call on the client side", async () => {
 
 test("Must link client and server spans together in the single call", async () => {
   // Given
-  const grpcBind = "0.0.0.0:3004";
+  const grpcBind = "0.0.0.0:4004";
   server = await createServer(grpcBind, (x) => x.addInterceptor(serverInterceptor));
   client = createClient(grpcBind);
 
@@ -202,7 +202,7 @@ test("Must link client and server spans together in the single call", async () =
 
 test("Must trace two consecutive calls correctly", async () => {
   // Given
-  const grpcBind = "0.0.0.0:3005";
+  const grpcBind = "0.0.0.0:4005";
   server = await createServer(grpcBind, (x) => x.addInterceptor(serverInterceptor));
   client = createClient(grpcBind);
 
@@ -238,7 +238,7 @@ test("Must trace two consecutive calls correctly", async () => {
 
 test("Must trace the call that did not fit into the deadline", async () => {
   // Given
-  const grpcBind = "0.0.0.0:3006";
+  const grpcBind = "0.0.0.0:4006";
   server = await createServer(grpcBind);
   client = createClient(grpcBind);
 
@@ -259,7 +259,7 @@ test("Must trace the call that did not fit into the deadline", async () => {
 
 test("Must trace cancelled call", async () => {
   // Given
-  const grpcBind = "0.0.0.0:3007";
+  const grpcBind = "0.0.0.0:4007";
   server = await createServer(grpcBind);
 
   // When

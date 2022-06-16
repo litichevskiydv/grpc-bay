@@ -18,9 +18,7 @@
     "build:server:swagger": "make-dir ./tests/generated/server && grpc-gen-swagger --swagger_opt=json_names_for_fields=true --swagger_out=logtostderr=true:./tests/generated/server -I ./tests/protos/ greeter.proto",
     "build:server": "npm run build:server:protos && npm run build:server:types && npm run build:server:swagger",
     "build:client": "grpc-gen-client --out ./tests/generated/client --include ./tests/protos/ greeter.proto",
-    "build": "npm run build:server && npm run build:client",
-    "test": "jest --verbose",
-    "coverageCalculation": "jest --coverage"
+    "build": "npm run build:server && npm run build:client"
   },
   "repository": {
     "type": "git",
@@ -37,16 +35,6 @@
     "url": "https://github.com/litichevskiydv/grpc-host-builder/issues"
   },
   "homepage": "https://github.com/litichevskiydv/grpc-host-builder#readme",
-  "jest": {
-    "testEnvironment": "node",
-    "setupFilesAfterEnv": [
-      "jest-extended/all"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/tests/generated/"
-    ]
-  },
   "dependencies": {
     "grpc-error-extra": "^1.0.0",
     "rxjs": "^7.5.5",
@@ -59,13 +47,10 @@
   },
   "devDependencies": {
     "@grpc/grpc-js": "^1.6.7",
-    "@types/jest": "^27.4.1",
     "coveralls": "^3.1.1",
     "google-protobuf": "^3.15.6",
     "grpc-instrumentum": "^3.0.7",
     "grpc-pbf-loader": "^1.0.5",
-    "jest": "^27.5.1",
-    "jest-extended": "^2.0.0",
     "make-dir-cli": "^2.0.0",
     "processing-context": "^1.0.0",
     "protobufjs": "^6.11.2"
