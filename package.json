@@ -13,7 +13,8 @@
   },
   "homepage": "https://github.com/litichevskiydv/grpc-bay#readme",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "coverageCalculation": "jest --coverage"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
@@ -26,10 +27,8 @@
     "setupFilesAfterEnv": [
       "jest-extended/all"
     ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/tests/generated/",
-      "/tests/localTracer/"
+    "collectCoverageFrom": [
+      "packages/*/src/**/*.js"
     ]
   }
 }
