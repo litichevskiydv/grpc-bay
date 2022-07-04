@@ -2,8 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/grpc-error-extra.svg)](https://www.npmjs.com/package/grpc-error-extra)
 [![npm downloads](https://img.shields.io/npm/dt/grpc-error-extra.svg)](https://www.npmjs.com/package/grpc-error-extra)
-[![dependencies](https://img.shields.io/david/litichevskiydv/grpc-error-extra.svg)](https://www.npmjs.com/package/grpc-error-extra)
-[![dev dependencies](https://img.shields.io/david/dev/litichevskiydv/grpc-error-extra.svg)](https://www.npmjs.com/package/grpc-error-extra)
+[![dependencies status](https://img.shields.io/librariesio/github/litichevskiydv/grpc-error-extra)](https://www.npmjs.com/package/grpc-error-extra)
 
 Utility error class suitable for gRPC error responses and can carry custom details
 
