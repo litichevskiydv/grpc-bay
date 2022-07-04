@@ -1,6 +1,5 @@
 # grpc-bay
 
-[![dependencies status](https://img.shields.io/librariesio/github/litichevskiydv/grpc-bay)](https://www.npmjs.com/package/grpc-bay)
 [![Build Status](https://github.com/litichevskiydv/grpc-bay/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/litichevskiydv/grpc-bay/actions/workflows/ci.yaml)
 [![Coverage Status](https://coveralls.io/repos/github/litichevskiydv/grpc-bay/badge.svg?branch=master)](https://coveralls.io/github/litichevskiydv/grpc-bay?branch=master)
 

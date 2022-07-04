@@ -2,7 +2,6 @@
 
 [![npm version](https://badge.fury.io/js/grpc-instrumentum.svg)](https://www.npmjs.com/package/grpc-instrumentum)
 [![npm downloads](https://img.shields.io/npm/dt/grpc-instrumentum.svg)](https://www.npmjs.com/package/grpc-instrumentum)
-[![dependencies status](https://img.shields.io/librariesio/github/litichevskiydv/grpc-instrumentum)](https://www.npmjs.com/package/grpc-instrumentum)
 
 A set of tools to simplify working with protoc
 

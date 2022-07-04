@@ -2,7 +2,6 @@
 
 [![npm version](https://badge.fury.io/js/grpc-host-builder.svg)](https://www.npmjs.com/package/grpc-host-builder)
 [![npm downloads](https://img.shields.io/npm/dt/grpc-host-builder.svg)](https://www.npmjs.com/package/grpc-host-builder)
-[![dependencies status](https://img.shields.io/librariesio/github/litichevskiydv/grpc-host-builder)](https://www.npmjs.com/package/grpc-host-builder)
 
 Lightweight configurator for gRPC host
 
