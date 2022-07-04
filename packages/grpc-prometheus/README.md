@@ -4,8 +4,6 @@
 [![npm downloads](https://img.shields.io/npm/dt/grpc-prometheus.svg)](https://www.npmjs.com/package/grpc-prometheus)
 [![dependencies](https://img.shields.io/david/litichevskiydv/grpc-prometheus.svg)](https://www.npmjs.com/package/grpc-prometheus)
 [![dev dependencies](https://img.shields.io/david/dev/litichevskiydv/grpc-prometheus.svg)](https://www.npmjs.com/package/grpc-prometheus)
-[![Build Status](https://github.com/litichevskiydv/grpc-prometheus/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/litichevskiydv/grpc-prometheus/actions/workflows/ci.yaml)
-[![Coverage Status](https://coveralls.io/repos/github/litichevskiydv/grpc-prometheus/badge.svg?branch=master)](https://coveralls.io/github/litichevskiydv/grpc-prometheus?branch=master)
 
 Interceptor for the server to collect statistics of calls through Prometheus
 

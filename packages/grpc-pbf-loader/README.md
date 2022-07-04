@@ -4,8 +4,6 @@
 [![npm downloads](https://img.shields.io/npm/dt/grpc-pbf-loader.svg)](https://www.npmjs.com/package/grpc-pbf-loader)
 [![dependencies](https://img.shields.io/david/litichevskiydv/grpc-pbf-loader.svg)](https://www.npmjs.com/package/grpc-pbf-loader)
 [![dev dependencies](https://img.shields.io/david/dev/litichevskiydv/grpc-pbf-loader.svg)](https://www.npmjs.com/package/grpc-pbf-loader)
-[![Build Status](https://github.com/litichevskiydv/grpc-pbf-loader/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/litichevskiydv/grpc-pbf-loader/actions/workflows/ci.yaml)
-[![Coverage Status](https://coveralls.io/repos/github/litichevskiydv/grpc-pbf-loader/badge.svg?branch=master)](https://coveralls.io/github/litichevskiydv/grpc-pbf-loader?branch=master)
 
 A utility package for loading `.proto` files for use with gRPC, using [pbf](https://github.com/mapbox/pbf) as a serializer.
 

@@ -4,8 +4,6 @@
 [![npm downloads](https://img.shields.io/npm/dt/grpc-clients-tracking.svg)](https://www.npmjs.com/package/grpc-clients-tracking)
 [![dependencies](https://img.shields.io/david/litichevskiydv/grpc-clients-tracking.svg)](https://www.npmjs.com/package/grpc-clients-tracking)
 [![dev dependencies](https://img.shields.io/david/dev/litichevskiydv/grpc-clients-tracking.svg)](https://www.npmjs.com/package/grpc-clients-tracking)
-[![Build Status](https://github.com/litichevskiydv/grpc-clients-tracking/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/litichevskiydv/grpc-clients-tracking/actions/workflows/ci.yaml)
-[![Coverage Status](https://coveralls.io/repos/github/litichevskiydv/grpc-clients-tracking/badge.svg?branch=master)](https://coveralls.io/github/litichevskiydv/grpc-clients-tracking?branch=master)
 
 Interceptors for the client and server to collect statistics about consumer calls through Prometheus
 
