@@ -1,7 +1,7 @@
 # grpc-bay
 
-[![Build Status](https://github.com/litichevskiydv/grpc-bay/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/litichevskiydv/grpc-bay/actions/workflows/ci.yaml)
-[![Coverage Status](https://coveralls.io/repos/github/litichevskiydv/grpc-bay/badge.svg?branch=master)](https://coveralls.io/github/litichevskiydv/grpc-bay?branch=master)
+[![Build Status](https://github.com/litichevskiydv/grpc-bay/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/litichevskiydv/grpc-bay/actions/workflows/ci.yaml)
+[![Coverage Status](https://coveralls.io/repos/github/litichevskiydv/grpc-bay/badge.svg?branch=main)](https://coveralls.io/github/litichevskiydv/grpc-bay?branch=main)
 
 Packages for working with gRPC in the JS world
 
