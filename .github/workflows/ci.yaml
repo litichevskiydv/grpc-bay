@@ -73,9 +73,7 @@ jobs:
           node-version: "16"
           registry-url: "https://registry.npmjs.org"
       - name: install dependencies
-        run: |
-          npm ci
-          npx lerna bootstrap
+        run: npm ci
       - name: publish
         run: npx lerna publish from-package
         env:
