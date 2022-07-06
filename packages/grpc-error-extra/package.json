@@ -14,7 +14,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/litichevskiydv/grpc-error-extra.git"
+    "url": "git+https://github.com/litichevskiydv/grpc-bay.git",
+    "directory": "packages/grpc-error-extra"
   },
   "keywords": [
     "grpc",
@@ -23,9 +24,9 @@
   "author": "Dmitriy Litichevskiy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/litichevskiydv/grpc-error-extra/issues"
+    "url": "https://github.com/litichevskiydv/grpc-bay/issues"
   },
-  "homepage": "https://github.com/litichevskiydv/grpc-error-extra#readme",
+  "homepage": "https://github.com/litichevskiydv/grpc-bay/tree/main/packages/grpc-error-extra#readme",
   "dependencies": {
     "serialize-error": "^8.1.0"
   },

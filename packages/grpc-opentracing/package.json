@@ -20,9 +20,10 @@
     "build": "npm run build:server && npm run build:client"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/litichevskiydv/grpc-opentracing.git"
-  },
+		"type": "git",
+		"url": "git+https://github.com/litichevskiydv/grpc-bay.git",
+		"directory": "packages/grpc-opentracing"
+	},
   "keywords": [
     "gRPC",
     "opentracing"
@@ -30,9 +31,9 @@
   "author": "Dmitriy Litichevskiy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/litichevskiydv/grpc-opentracing/issues"
-  },
-  "homepage": "https://github.com/litichevskiydv/grpc-opentracing#readme",
+		"url": "https://github.com/litichevskiydv/grpc-bay/issues"
+	},
+  "homepage": "https://github.com/litichevskiydv/grpc-bay/tree/main/packages/grpc-opentracing#readme",
   "dependencies": {
     "serialize-error": "^8.1.0"
   },

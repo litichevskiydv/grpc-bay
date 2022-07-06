@@ -21,7 +21,8 @@
 	  },
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/litichevskiydv/grpc-clients-tracking.git"
+		"url": "git+https://github.com/litichevskiydv/grpc-bay.git",
+		"directory": "packages/grpc-clients-tracking"
 	},
 	"keywords": [
 		"gRPC",
@@ -30,9 +31,9 @@
 	"author": "Dmitriy Litichevskiy",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/litichevskiydv/grpc-clients-tracking/issues"
+		"url": "https://github.com/litichevskiydv/grpc-bay/issues"
 	},
-	"homepage": "https://github.com/litichevskiydv/grpc-clients-tracking#readme",
+	"homepage": "https://github.com/litichevskiydv/grpc-bay/tree/main/packages/grpc-clients-tracking#readme",
 	"dependencies": {
 		"parent-module": "^2.0.0",
 		"read-pkg-up": "^7.0.1"

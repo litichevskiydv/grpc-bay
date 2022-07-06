@@ -20,9 +20,10 @@
     "build": "npm run build:server && npm run build:client"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/litichevskiydv/grpc-prometheus.git"
-  },
+		"type": "git",
+		"url": "git+https://github.com/litichevskiydv/grpc-bay.git",
+		"directory": "packages/grpc-prometheus"
+	},
   "keywords": [
     "gRPC",
     "Prometheus"
@@ -30,9 +31,9 @@
   "author": "Dmitriy Litichevskiy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/litichevskiydv/grpc-prometheus/issues"
-  },
-  "homepage": "https://github.com/litichevskiydv/grpc-prometheus#readme",
+		"url": "https://github.com/litichevskiydv/grpc-bay/issues"
+	},
+  "homepage": "https://github.com/litichevskiydv/grpc-bay/tree/main/packages/grpc-prometheus#readme",
   "peerDependencies": {
     "@grpc/grpc-js": "^1.2.0",
     "prom-client": "^11.5.3"

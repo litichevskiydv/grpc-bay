@@ -19,9 +19,10 @@
     "grpc-gen-client": "./src/bin/grpc-gen-client.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/litichevskiydv/grpc-instrumentum.git"
-  },
+		"type": "git",
+		"url": "git+https://github.com/litichevskiydv/grpc-bay.git",
+		"directory": "packages/grpc-instrumentum"
+	},
   "keywords": [
     "grpc",
     "protoc",
@@ -30,9 +31,9 @@
   "author": "Dmitriy Litichevskiy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/litichevskiydv/grpc-instrumentum/issues"
-  },
-  "homepage": "https://github.com/litichevskiydv/grpc-instrumentum#readme",
+		"url": "https://github.com/litichevskiydv/grpc-bay/issues"
+	},
+  "homepage": "https://github.com/litichevskiydv/grpc-bay/tree/main/packages/grpc-instrumentum#readme",
   "dependencies": {
     "bl": "^5.0.0",
     "camelcase": "^6.3.0",

@@ -22,7 +22,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/litichevskiydv/grpc-host-builder.git"
+    "url": "git+https://github.com/litichevskiydv/grpc-bay.git",
+    "directory": "packages/grpc-host-builder"
   },
   "keywords": [
     "gRPC",
@@ -32,9 +33,9 @@
   "author": "Dmitriy Litichevskiy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/litichevskiydv/grpc-host-builder/issues"
+    "url": "https://github.com/litichevskiydv/grpc-bay/issues"
   },
-  "homepage": "https://github.com/litichevskiydv/grpc-host-builder#readme",
+  "homepage": "https://github.com/litichevskiydv/grpc-bay/tree/main/packages/grpc-host-builder#readme",
   "dependencies": {
     "grpc-error-extra": "^1.0.0",
     "rxjs": "^7.5.5",
