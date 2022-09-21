@@ -20,10 +20,10 @@
     "build": "npm run build:server && npm run build:client"
   },
   "repository": {
-		"type": "git",
-		"url": "git+https://github.com/litichevskiydv/grpc-bay.git",
-		"directory": "packages/grpc-prometheus"
-	},
+    "type": "git",
+    "url": "git+https://github.com/litichevskiydv/grpc-bay.git",
+    "directory": "packages/grpc-prometheus"
+  },
   "keywords": [
     "gRPC",
     "Prometheus"
@@ -31,22 +31,23 @@
   "author": "Dmitriy Litichevskiy",
   "license": "MIT",
   "bugs": {
-		"url": "https://github.com/litichevskiydv/grpc-bay/issues"
-	},
+    "url": "https://github.com/litichevskiydv/grpc-bay/issues"
+  },
   "homepage": "https://github.com/litichevskiydv/grpc-bay/tree/main/packages/grpc-prometheus#readme",
   "peerDependencies": {
     "@grpc/grpc-js": "^1.2.0",
     "prom-client": "^11.5.3"
   },
   "devDependencies": {
-    "@grpc/grpc-js": "^1.6.7",
-    "google-protobuf": "^3.15.6",
+    "@grpc/grpc-js": "^1.7.0",
+    "google-protobuf": "^3.21.0",
     "grpc-host-builder": "^5.3.3",
     "grpc-instrumentum": "^3.0.7",
     "grpc-pbf-loader": "^1.0.5",
-    "make-dir-cli": "^2.0.0",
+    "make-dir-cli": "^3.0.0",
     "processing-context": "^1.0.0",
-    "prom-client": "^14.0.1",
-    "protobufjs": "^6.11.2"
+    "prom-client": "^14.1.0",
+    "protobufjs": "^7.1.1",
+    "protobufjs-cli": "^1.0.2"
   }
 }
