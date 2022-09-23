@@ -3,7 +3,7 @@
   "version": "5.4.3",
   "description": "Lightweight configurator for gRPC host",
   "engines": {
-    "node": ">=10.10.0"
+    "node": ">=14"
   },
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
