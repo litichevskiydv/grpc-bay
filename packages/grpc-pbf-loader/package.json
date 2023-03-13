@@ -13,10 +13,10 @@
     "LICENSE"
   ],
   "repository": {
-		"type": "git",
-		"url": "git+https://github.com/litichevskiydv/grpc-bay.git",
-		"directory": "packages/grpc-pbf-loader"
-	},
+    "type": "git",
+    "url": "git+https://github.com/litichevskiydv/grpc-bay.git",
+    "directory": "packages/grpc-pbf-loader"
+  },
   "keywords": [
     "gRPC",
     "proto",
@@ -25,13 +25,13 @@
   "author": "Dmitriy Litichevskiy",
   "license": "MIT",
   "bugs": {
-		"url": "https://github.com/litichevskiydv/grpc-bay/issues"
-	},
+    "url": "https://github.com/litichevskiydv/grpc-bay/issues"
+  },
   "homepage": "https://github.com/litichevskiydv/grpc-bay/tree/main/packages/grpc-pbf-loader#readme",
   "dependencies": {
     "camelcase": "^6.3.0",
     "dot-prop": "^6.0.1",
-    "fs-extra": "^10.0.1",
+    "fs-extra": "^11.1.0",
     "pbf": "^3.2.1",
     "protocol-buffers-schema": "^3.6.0"
   }
